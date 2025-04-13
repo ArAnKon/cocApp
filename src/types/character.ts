@@ -14,6 +14,7 @@ export type Stats = {
   mp: number
   sanity: number
   luck: number
+  speed: number
 }
 
 export type SpecializationSkill = {
