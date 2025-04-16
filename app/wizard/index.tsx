@@ -17,7 +17,7 @@ export default function Step1() {
     []
   );
 
-  const [selectedId, setSelectedId] = useState<string | undefined>();
+  const [selectedAge, setSelectedAge] = useState<string | undefined>();
 
   return (
     <View>
@@ -39,8 +39,8 @@ export default function Step1() {
 
       <RadioGroup
         radioButtons={radioButtons}
-        onPress={setSelectedId}
-        selectedId={selectedId}
+        onPress={setSelectedAge}
+        selectedId={selectedAge}
         layout="row"
         containerStyle={styles.radioGroup}
       />

@@ -7,7 +7,6 @@ import { useRouter } from "expo-router";
 
 import LabeledInput from "@/src/components/LabeledInput/LabeledInput";
 
-
 export default function Step3() {
   const router = useRouter();
   const [sanity, onChangeSanity] = React.useState(""); //рассудок
@@ -18,12 +17,17 @@ export default function Step3() {
   const [build, onChangeBuild] = React.useState(""); //Компл
 
   return (
-  <View>
- <LabeledInput label="Рассудок" value={sanity} onChangeText={onChangeSanity} />
- <LabeledInput label="ПЗ" value={hp} onChangeText={onChangeHP} />
- <LabeledInput label="ПМ" value={mp} onChangeText={onChangeMP} />
- <LabeledInput label="ПМ" value={speed} onChangeText={onChangeSpeed} />
- <LabeledInput label="БкУ" value={mp} onChangeText={onChangeMP} />
- <Button title="Далее" onPress={() => router.navigate('/wizard/skills')}/>
-  </View>);
+    <View>
+      <LabeledInput
+        label="Рассудок"
+        value={sanity}
+        onChangeText={onChangeSanity}
+      />
+      <LabeledInput label="ПЗ" value={hp} onChangeText={onChangeHP} />
+      <LabeledInput label="ПМ" value={mp} onChangeText={onChangeMP} />
+      <LabeledInput label="ПМ" value={speed} onChangeText={onChangeSpeed} />
+      <LabeledInput label="БкУ" value={mp} onChangeText={onChangeMP} />
+      <Button title="Далее" onPress={() => router.navigate("/wizard/skills")} />
+    </View>
+  );
 }

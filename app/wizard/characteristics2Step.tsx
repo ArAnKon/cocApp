@@ -31,7 +31,10 @@ export default function Step2() {
         onChangeText={onChangeINT}
       />
       <LabeledInput label="ОБР" value={education} onChangeText={onChangeEDU} />
-      <Button title="Далее" onPress={() => router.navigate('/wizard/autocomplete')}/>
+      <Button
+        title="Далее"
+        onPress={() => router.navigate("/wizard/autocomplete")}
+      />
     </View>
   );
 }
